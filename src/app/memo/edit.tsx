@@ -1,4 +1,9 @@
-import { View, TextInput, StyleSheet } from "react-native";
+import {
+  View,
+  TextInput,
+  StyleSheet,
+  KeyboardAvoidingView,
+} from "react-native";
 
 import Header from "../../components/Header";
 import CircleButton from "../../components/CirlceButton";
@@ -6,7 +11,7 @@ import Icon from "../../components/Icon";
 
 const Edit = (): JSX.Element => {
   return (
-    <View style={styles.container}>
+    <KeyboardAvoidingView behavior="height" style={styles.container}>
       <Header />
       <View style={styles.InputContainer}>
         <TextInput multiline style={styles.input} value={"買い物\nリスト"} />
@@ -14,7 +19,7 @@ const Edit = (): JSX.Element => {
       <CircleButton>
         <Icon name="check" size={40} color="#ffffff" />
       </CircleButton>
-    </View>
+    </KeyboardAvoidingView>
   );
 };
 
