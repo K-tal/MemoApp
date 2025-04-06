@@ -6,7 +6,7 @@ import fontSelection from "../../assets/fonts/selection.json";
 
 const CustomIcon = createIconSetFromIcoMoon(
   fontSelection,
-  "icoMoon",
+  "IcoMoon",
   "icomoon.ttf"
 );
 
